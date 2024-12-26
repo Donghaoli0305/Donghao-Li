@@ -1,14 +1,19 @@
-an AI for the game Gomoku. Gomoku is like TicTac-Toe, but the board is larger. The number of marks needed to win is also larger, and not
-necessarily the same as the board size. This implementation uses custom board sizes and win
-sizes.
-The following .py files are involved:
-• gomoku.py: Contains the domain API for the game. The game state is represented by
-a 2D NumPy array, where +1, −1, and 0 entries indicate max player (x) marks, min
-player (o) marks, and empty board positions, respectively. Actions are represented by
-(row,col) tuples indicating the row and column in which the next mark is placed.
-• minimax.py: Contains a minimax search algorithm with multiple features, including
-depth limit, evaluation function, and alpha-beta pruning.
-• evaluation.py: Contains two evaluation functions for depth-limited minimax, including
-one you can implement for bonus credit.
-• competition.py: Runs a competition between a simple evaluation function and the one
-you implement. Run this file to see whether you will receive any bonus credit.
+Implement several gradient calculations using PyTorch. 
+The methods mountain1d and robot have comments indicating what your implementations
+should do. The method neural network deals with the following neural network model:
+y = W(1) tanh (x(1) + W(2) tanh ( x(2) + W(3) tanh ( x(3))))
+where
+• W(1) ∈ R1x2 and x(1) = [-1, +1]T ∈ R2x1,
+• W(2) ∈ R2x3 and x(2) = [+1, +1, +1]T ∈ R3x1,
+• W(3) ∈ R3x4 and x(3) = [-1, -1, -1, -1]T ∈ R4x1,
+and tanh is applied to vectors element-wise. Each W(k) is a weight matrix represented by a
+2D array, and each x(k) is an input vector. Mathematically x(k) is a column vector, but in
+terms of implementation, you may want to represent it as a 1D array depending on which
+PyTorch method you use for matrix-vector multiplication.
+The target output of this network is 1, and the squared error is e = (y → 1)2. We can
+minimize the network’s error by finding better weights via gradient descent. The gradient is
+a collection of partial derivatives, which can be organized into matrices with the same shapes
+as the corresponding W(k):
+(∇W(k)e)i,j = de/ dW(K)I,J
+Your implementation of neural network should accept particular values for each W(k) as input, and then compute y, e, and each ∇W(k)e as output. The method comment in torch code.py
+includes links to documentation that may be helpful.
