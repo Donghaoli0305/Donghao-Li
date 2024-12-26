@@ -1,4 +1,4 @@
-a variant of the roomba domain, search algorithms, and
+A variant of the roomba domain, search algorithms, and
 heuristic covered in lecture. The variations are as follows:
 • In addition to up/down/left/right, the valid actions include moving to an adjacent square
 in any diagonal direction, or staying put at the current square. If the roomba’s power is
