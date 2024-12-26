@@ -1,0 +1,29 @@
+a variant of the roomba domain, search algorithms, and
+heuristic covered in lecture. The variations are as follows:
+• In addition to up/down/left/right, the valid actions include moving to an adjacent square
+in any diagonal direction, or staying put at the current square. If the roomba’s power is
+zero, its only valid action is staying put. For the purposes of queue search, the step-cost
+of each action (including staying put) is 1. This encourages the roomba to clean the
+room as quickly as possible.
+• If the roomba performs an action that is not staying put, its power is decremented by 1
+in the new state.
+• If the roomba stays put on a clean square, the state does not change (no power decrement). The step-cost is still 1, since staying put on a clean square costs one unit of
+time.
+• If the roomba has non-zero power and stays put on a dirty square, the square becomes
+clean and the roomba’s power is decremented by 1 in the new state. Dirty squares do
+not become clean when the roomba’s power is zero, or when the roomba does not choose
+to stay put on them, even if it passes over them.
+• If the roomba stays put on a charger, the roomba’s power is incremented by 1 in the new
+state, unless it is already at maximum power, in which case the state does not change.
+Chargers do not increase the roomba’s power when it does not choose to stay put on
+them, even if it passes over them.
+• In addition to having no dirty squares, the goal states also require that the roomba is
+back at a charger.
+• In addition to returning a plan, queue search should also return a total “node count.”
+The node count is the total number of nodes that were popped off the frontier during
+the search.
+• You will implement better heuristic, which can be any heuristic that results in lower
+node counts than the simple heuristic that is already implemented for you. The
+simple heuristic is similar to the one covered in lecture, modified to account for diagonal
+motions. Your better heuristic should still satisfy the formal definition of “consistency”
+so that queue search is guaranteed to find an optimal plan.
