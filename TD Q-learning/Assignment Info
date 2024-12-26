@@ -1,0 +1,24 @@
+trategies for choosing actions and adaptive learning
+rates during TD Q-learning. Your strategies will be evaluated on the cat-mouse domain
+from lecture. To maximize your score on this question, your strategy should rapidly learn
+near-optimal behavior. Specifically, your score will be proportional to the total reward your
+strategy receives over the entire learning period (not just near the end), with the highest
+scoring student submissions receiving one full point of bonus credit for this question.
+There are two code files involved:
+• catmouse.py: This code is mostly the same as the Q-learning code from lecture. You
+can run this file to gauge the performance of your strategies, and even modify it to test
+hypotheses and deepen your understanding of the problem. However, this file will be
+replaced by the intructor’s copy for grading, so your submission should not rely on any
+changes you make to this file. This script requires that you have matplotlib installed
+for visualization.
+• catmouse helpers.py: Your implementations go in this file. There are three functions
+you can edit:
+(a) get discount factor: Use this method to set the discount factor for the learning
+process.
+(b) choose action: Use this method to select an action at each time-step. Your selection method should balance between exploration and exploitation. The only
+information it can use is the current time-step, the current Q-value estimates for
+each action at the current state, and the current counts for how many times each
+action was performed at the current state.
+(c) choose learning rate: Use this method to set the learning rate α at each timestep. The only information it can use is the current time-step, the current Q-value
+estimates for each action at the old state and new state, and the current counts for
+how many times each action was performed at the old state and new state.
