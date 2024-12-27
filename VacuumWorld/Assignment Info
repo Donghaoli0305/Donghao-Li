@@ -1,0 +1,18 @@
+This is a multi-agnet course assignment here are some requirements
+Question answering:
+  (10pts) “order=linearradom”. 
+  Explain this option
+  Explain all other options for ”order”
+  (10 pts) How many times does each ”if bel(..)” rule execute in one cycle? Explain the answer.
+  Study each line of the code and understand the main module.
+
+  vacuumEvents.mod2g
+  (10pts) What does the first “forall bel(…)” do? Why do we need it? Explain in terms of the cqhanges in the belief base.
+  (10pts) What does the second “fall all percept(..) do? Why do we need it?  Explain in terms of the changes in the belief base.
+
+  Write a program that cleans all the dirt and stops. 
+  Hint: 
+  Assume that the agent knows the dirt piles' X and Y coordinates. We can insert these coordinates into the goal base in the init module. 
+  As the agent cleans each dirt pile, it inserts the fact that it has visited the location into the belief base. Once all dirt piles are cleaned, the robot accomplishes all goals. 
+  When all goals are satisfied, the agent terminates. (see the options for ”exit” in the GOAL manual)
+  Piles of dirt are static, so they don’t get regenerated once cleaned.
