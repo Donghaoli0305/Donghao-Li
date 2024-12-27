@@ -1,0 +1,49 @@
+Facebook Network Analysis:
+Number of Nodes = 4039
+Number of Edges = 88234
+Diameter = 8
+Average Distance = 3.6925068496963913
+Average Clustering Coefficient = 0.6055467186200862
+
+Top 10 Facebook Users:
+Facebook user 107 who has 1045 friends
+Facebook user 1684 who has 792 friends
+Facebook user 1912 who has 755 friends
+Facebook user 3437 who has 547 friends
+Facebook user 0 who has 347 friends
+Facebook user 2543 who has 294 friends
+Facebook user 2347 who has 291 friends
+Facebook user 1888 who has 254 friends
+Facebook user 1800 who has 245 friends
+Facebook user 1663 who has 235 friends
+
+Twitter Network Analysis:
+Number of Nodes = 81306
+Number of Edges = 1768149
+
+Top 10 Twitter Users:
+Twitter user 115485051 who has 3383 followers
+Twitter user 40981798 who has 3216 followers
+Twitter user 43003845 who has 2735 followers
+Twitter user 813286 who has 2647 followers
+Twitter user 22462180 who has 2471 followers
+Twitter user 34428380 who has 2462 followers
+Twitter user 15913 who has 2133 followers
+Twitter user 7861312 who has 2074 followers
+Twitter user 3359851 who has 1905 followers
+Twitter user 11348282 who has 1707 followers
+Undirected Twitter Graph Analysis:
+Number of Nodes: 81306
+Number of Edges: 1342310
+
+Undirected Twitter Graph (Reciprocal) Analysis:
+Number of Nodes: 61907
+Number of Edges: 425853
+
+Root: 56860418
+Number of Nodes: 10000
+Number of Edges: 51187
+Diameter: 8
+Average Distance: 4.407460908468763
+Average Clustering Coefficient: 0.2467306989336193
+
