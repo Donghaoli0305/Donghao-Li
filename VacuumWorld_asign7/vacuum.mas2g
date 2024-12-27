@@ -1,0 +1,13 @@
+use "vacuumworld-1.3.0-modified.jar" as environment with 
+ 	level="C:/Users/72799/eclipse-workspace/VacuumWorld_asign7/test14x10.vwl",
+	generation="no".
+
+define vacuumbot1 as agent {
+	use vacuumInit as init module.
+	use vacuumEvents as event module.
+	use vacuumBot as main module.
+} 
+
+launchpolicy {
+	when name = Henry launch vacuumbot1.
+}

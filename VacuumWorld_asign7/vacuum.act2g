@@ -1,0 +1,9 @@
+use vacuum as knowledge.
+
+define move(Dir) with
+   pre{ square(Dir, Obj), not(obstruction(Obj)) }
+   post{ true }
+
+define clean with
+	pre{ true }
+	post{ true }
