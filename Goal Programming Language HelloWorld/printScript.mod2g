@@ -1,0 +1,9 @@
+use counter as knowledge.
+use script as beliefs.
+use printText as actionspec.
+exit=nogoals.
+
+module printScript {
+	if goal( nrOfPrintedLines(_) ), bel( nrOfPrintedLines(LineNr), NextLine is LineNr+1, script(NextLine, Text) )
+		then printText(Text).
+}

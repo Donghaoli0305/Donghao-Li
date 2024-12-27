@@ -1,0 +1,6 @@
+use counter as knowledge.
+
+module updateScriptCounter {
+	if percept( printedText(NewCount) ), bel( nrOfPrintedLines(Count) )
+		then delete( nrOfPrintedLines(Count) ) + insert( nrOfPrintedLines(NewCount) ).
+}

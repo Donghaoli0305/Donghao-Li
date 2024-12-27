@@ -1,0 +1,6 @@
+use counter as knowledge.
+exit=nogoals.
+
+module helloWorld10x {
+	if goal( nrOfPrintedLines(_) ) then print("Hello, world!").
+}

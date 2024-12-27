@@ -1,0 +1,10 @@
+% Simple Hello World agent that prints "Hello, world!" message 10 times.
+define helloWorldAgent as agent {
+	use initCounter as init module.
+	use helloWorld10x as main module.
+	use updateCounter as event module.
+}
+
+launchpolicy {
+	launch helloWorldAgent.
+}

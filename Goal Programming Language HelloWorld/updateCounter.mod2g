@@ -1,0 +1,6 @@
+use counter as knowledge.
+
+module updateCounter {
+	if bel( nrOfPrintedLines(Count), NewCount is Count+1 )
+		then delete( nrOfPrintedLines(Count) ) + insert( nrOfPrintedLines(NewCount) ).
+}

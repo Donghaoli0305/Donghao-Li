@@ -1,0 +1,6 @@
+use dummy as knowledge.
+exit=always.
+
+module helloWorld {
+	if true then print("I am Donghao Li, Hello, world!").
+}

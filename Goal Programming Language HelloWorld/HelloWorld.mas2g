@@ -1,0 +1,7 @@
+define helloWorldAgent as agent {
+	use helloWorld as main module.
+}
+
+launchpolicy {
+	launch helloWorldAgent.
+}

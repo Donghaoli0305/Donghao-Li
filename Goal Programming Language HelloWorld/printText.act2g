@@ -1,0 +1,7 @@
+use dummy as knowledge.
+
+% The action printText expects a string of the form "..." as its argument. 
+% It can always be performed and has no other effect than printing Text to a window.
+define printText(Text) with
+	pre{ true }
+	post{ true }

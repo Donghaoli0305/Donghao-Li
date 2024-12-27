@@ -1,0 +1,5 @@
+use counter as knowledge.
+
+module initCounter {
+	if true then insert( nrOfPrintedLines(0) ) + adopt( nrOfPrintedLines(10) ).
+}
