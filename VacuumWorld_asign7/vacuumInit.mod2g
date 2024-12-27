@@ -1,9 +1,0 @@
-use vacuum as knowledge.
-
-module vacuumInit {
-	if true then insert(energyLevel(10)) + adopt(energyLevel(0)).
-	if true then insert(utility(0)).
-	if true then insert(reward(5)).
-	if true then insert(probability(0.5)).
-	if true then insert(energyuse(1)).
-}
