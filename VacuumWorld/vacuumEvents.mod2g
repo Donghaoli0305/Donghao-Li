@@ -1,0 +1,9 @@
+use vacuum as knowledge.
+
+module vacuumEvents {
+	forall bel(square(Name,Contents)) do delete(square(Name,Contents)).
+	
+	forall percept(square(Name,Contents)) do insert(square(Name,Contents)).
+	
+	if true then insert(square(back,empty)).
+}
