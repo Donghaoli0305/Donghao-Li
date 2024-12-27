@@ -1,0 +1,27 @@
+This is a updated assignment of the vacuum Agent assignment it implement utility functions
+Here are specific requirements:
+  • Version 1: Use the following random rule
+  – possiblemove(X) :- random_member (X, [left, right, back,
+  forward]).
+  • Version 2: Use the following instead of the random
+  rule above.
+  – possiblemove(left). possiblemove(right).
+  possiblemove(back). possiblemove(forward).
+  • Question:
+  – Run the programs with version 1 and 2. How would the
+  robot behave differently for Version 1 and Version 2? And
+  why?
+
+  1. Modify your original vacuum world program with the code provided in
+  this PPT file so that the robot will be a utility-based robot. Show the
+  code in your report and run script.
+  – The utility function is sqrt(x)
+  2. Change the values of
+    1. reward(5), probability(0.5), and energyuse(1) so that robot would be less or
+    more willing to move. Observe the behaviors. Write a couple of paragraphs of
+    explanations for your observations. You must explain the behaviors based on
+    these changed values.
+  3. Alternative utility function can be a risk-seeking function. For example, x2
+  is one.
+    1. Implement this function and replace the existing risk-averse function.
+    2. Do the same exercise in 2.1 above.
