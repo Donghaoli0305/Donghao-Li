@@ -1,0 +1,13 @@
+This is a master course provideed by University of Florida. The main topic of this course is large language model. The course was being seperated into following sections:
+1. basic language model like n-gram, word embedding and tokenization techniques
+2. Neural architecture for LLMs, language models like RNN and LSTM
+3. Attention technique including self-attention and multihead-attention. Intro to transformer structure and transformer based-LLMs
+4. Encoder, Encoder-decoder, Decoder only LLMs
+5. Traininf and Pre-training for LLMs, training data for LLMs, nference of LLMs including decoding strategies and controllable text generation
+6. Fine-tuning LLMs, including fine-tuning, prompt-based tuning, parameter efficient fine-tuning
+   Post-training LLMs, including in-context learning, instruction tuning, model alignment
+7. Reinforcement Learning in LLMs, including Proximal Policy Optimization (PPO), Direct Preference Optimization (DPO), Group Relative Policy Optimization (GRPO),  LLMs scaling law and emergent behavior
+8. Retrieval-augmented LLMs, Retrieval Augmentation Generation
+9. Knowledge-enhanced LLMs, including knowledge extraction, knowledge storage, knowledge editing, knowledge unlearning
+10. Reasoning and Planning in LLMs LLM-based agent and multi-agent system LLM harm, debias, detoxification
+11. LLM hallucination detection and mitigation Multi-modality LLM, language and vision foundation models
